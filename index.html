@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--navbar-->
+    <nav class="navbar">
+      <h1 class="navbar-logo">Adven<span>Tur</span></h1>
+
+      <ul class="navbar-links">
+        <li><a href="" class="active">Ana Sayfa</a></li>
+        <li><a href="">Turlar</a></li>
+        <li><a href="">Keşfet</a></li>
+        <li><a href="">Hakkımızda</a></li>
+        <li><a href="" class="btn" id="contact">İletişime Geç</a></li>
+      </ul>
+
+      <img src="./img/menu-btn.png" alt="" class="navbar-menu-btn" />
+    </nav>
+    <!--navbar-->
+
+    <!--header-->
+    <header class="header">
+      <div class="header-content">
+        <h2>Renkli Dünyaları Keşfet</h2>
+        <div class="line"></div>
+
+        <h1>Muazzam Bir Hediye</h1>
+        <a href="" class="btn">Daha Fazla</a>
+      </div>
+    </header>
+
+    <!--header-->
+
+    <!--Yaklaşan etkinlikler alanı başlangıç-->
+
+    <section class="events">
+      <div class="events-title">
+        <h1>Yaklaşan Etkinlikler</h1>
+        <div class="line"></div>
+      </div>
+
+      <!--Bir satır oluşturduk iki tane de sütun ekledik-->
+      <div class="events-row">
+        <div class="events-row-col">
+          <img src="./img/img1.png" alt="" />
+          <h4>Everest Kampı</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            et quas reprehenderit eos consequuntur nostrum soluta atque voluptas
+            obcaecati. Laudantium.
+          </p>
+
+          <a href="" class="btn">Daha Fazla</a>
+        </div>
+
+        <div class="events-row-col">
+          <img src="./img/img2.png" alt="" />
+          <h4>Doğa Yürüyüşü</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            et quas reprehenderit eos consequuntur nostrum soluta atque voluptas
+            obcaecati. Laudantium.
+          </p>
+
+          <a href="" class="btn">Daha Fazla</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Yaklaşan etkinlikler alanı bitiş-->
+
+    <!--Keşfet alanı başlangıç-->
+    <section class="explore">
+      <div class="explore-content">
+        <h1>Dünyayı Keşfet</h1>
+        <div class="line"></div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero sit
+          ducimus velit ullam, harum deserunt mollitia ut corrupti suscipit
+          reprehenderit!
+        </p>
+        <a href="" class="btn">Haydi Keşfet</a>
+      </div>
+    </section>
+
+    <!--Keşfet alanı bitiş-->
+
+    <!--Yaklaşan Turlar Başlangıç-->
+
+    <section class="tours">
+      <div class="tours-title">
+        <h1>Yaklaşan Turlar ve Etkinlikler</h1>
+        <div class="line"></div>
+      </div>
+
+      <div class="tours-row">
+        <div class="tours-row-col">
+          <h4>Yaklaşan Turlar</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
+            doloremque id maxime perferendis repellendus excepturi impedit
+            corrupti nesciunt, fuga similique.
+          </p>
+          <a href="" class="btn">Dahasını Öğren</a>
+        </div>
+
+        <div class="tours-row-col">
+          <div class="tours-row-col-gallery">
+            <img src="./img/img3.png" alt="" />
+            <img src="./img/img4.png" alt="" />
+            <img src="./img/img5.png" alt="" />
+            <img src="./img/img6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Yaklaşan Turlar Bitiş-->
+
+    <!--Footer Alanı Başlangıç-->
+
+    <section class="footer">
+      <p>123 Avenue ,NY 10160,New York,USA | Email:contact@example.com</p>
+      <p>Copyright 2020 Outdoor Adventure</p>
+    </section>
+
+    <!--Footer Alanı Bitiş-->
+
+    <!--script alanı-->
+
+    <script>
+      const menuBtn = document.querySelector(".navbar-menu-btn");
+      const navbarLinks = document.querySelector(".navbar-links");
+      menuBtn.addEventListener("click", () => {
+        navbarLinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>

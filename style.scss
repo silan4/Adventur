@@ -1,0 +1,189 @@
+@import "_navbar";
+@import "_header";
+@import "_events";
+@import "_explore";
+@import "_tours";
+@import "_footer";
+
+:root {
+  --primary-color: #fc036b;
+  --secondary-color: #484872;
+  --hirdy-color: #49497e;
+  --text-color: whitesmoke;
+  --transition: all 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.active{
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.navbar-logo{
+  color: var(--secondary-color);
+  
+  font-size: 2rem;
+
+  span{
+    color: var(--primary-color);
+  }
+
+}
+
+
+
+
+a{
+
+  color: var(--text-color);
+  font-size: 1.2rem;
+  transition: var(--transition);
+
+
+}
+
+.navbar-links li a:after{
+   content: '';
+   display: block;
+   background-color: red;
+   height: 2px;
+   margin-top: 1px;
+   width: 0;
+   transition: var(--transition);
+   
+}
+
+ .navbar-links li a:hover{
+
+  width: 100%;
+
+}
+
+#contact::after{
+  display: none;
+}
+
+h4 {
+  font-size: 3vmin;
+  color: var(--secondary-color);
+  margin: 25px auto;
+}
+
+p {
+  color: #7c7c7c;
+  /*p ye verilen sağdaan soldan padding taşmayı engeller*/
+  padding: 0px 40px;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+.events-row,.tours-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.navbar-menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+
+}
+
+@media only screen and (max-width:850px) {
+
+  .navbar{
+    padding: 0;
+
+    &-logo{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      color: var(--text-color);
+      z-index: 1500;
+
+
+    }
+ /*mobil ekranda menu görünümü*/
+
+
+    &-links{
+      background-color: var(--secondary-color);
+      width: 100%;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      transition: all .5s ease;
+      position: absolute;
+      margin-top: -850px;
+     
+      
+      li{
+        margin: 30px auto;
+
+      }
+
+     
+
+    }
+
+    &-menu-btn{
+      display: block;
+      
+    }
+
+  }
+
+  .mobile-menu{
+    margin-top: 0;
+    border-bottom-right-radius: 30%;
+
+  }
+
+}
+
+
+
+
+

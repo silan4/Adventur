@@ -1,0 +1,43 @@
+.tours {
+    &-title {
+        text-align: center;
+        font-size: 4vmin;
+        color: var(--hirdy-color);
+
+    }
+
+    &-row {
+        margin-top: 50px;
+
+
+
+        &-col {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+
+            .btn {
+                margin-top: 15px;
+
+            }
+
+            &-gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+                gap: 2rem;
+                align-items: center;
+                width: 100%;
+
+
+                img {
+                    width: 100%;
+
+                }
+            }
+
+        }
+
+    }
+}
